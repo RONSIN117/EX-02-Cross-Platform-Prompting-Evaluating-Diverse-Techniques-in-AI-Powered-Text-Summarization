@@ -19,7 +19,6 @@ Speed
 User experience
 
 ## Algorithm
-Algorithm
 Source Material Preparation: Select a 500-word technical article, "The Basics of Blockchain Technology," to be used as the single, consistent input for all tests. A control summary will be manually written to serve as a benchmark for accuracy.
 
 Platform Setup: Access and normalize settings (if possible) across the four target platforms: ChatGPT, Gemini, Claude, and Copilot.
@@ -28,25 +27,25 @@ Prompt Technique Formulation: Design four distinct prompts for the same article,
 
 Zero-Shot: A simple, direct command.
 
-Prompt: "Summarize the following text:" [Article text inserted]
+Prompt: "Summarize the following text:"
 
 Role-Based (Persona): Uses the specific persona from the scenario.
 
-Prompt: "You are part of a content curation team for an educational platform. Your task is to summarize the following 500-word technical article on 'The Basics of Blockchain Technology' for undergraduate students. Your goal is to be accurate, coherent, and simple." [Article text inserted]
+Prompt: "You are part of a content curation team for an educational platform. Your task is to summarize the following 500-word technical article on 'The Basics of Blockchain Technology' for undergraduate students. Your goal is to be accurate, coherent, and simple."
 
 Chain-of-Thought (CoT): Asks the model to reason first, then summarize.
 
-Prompt: "Read the following article. First, identify the 3-5 main concepts. Second, explain what each concept means in one sentence. Finally, combine these explanations into a single, simple summary for a student." [Article text inserted]
+Prompt: "Read the following article. First, identify the 3-5 main concepts. Second, explain what each concept means in one sentence. Finally, combine these explanations into a single, simple summary for a student."
 
 Few-Shot: Provides one example of a good summary before giving the real task.
 
 Prompt: "Here is an example of how to summarize a technical text for a student:
 
-Original: [Insert 100-word technical text on 'Cloud Computing']
+Original: 'Cloud computing is an on-demand delivery model for IT resources over the Internet with pay-as-you-go pricing. Instead of buying, owning, and maintaining physical data centers and servers, organizations can access technology services, such as computing power, storage, and databases, from a cloud provider. This involves IaaS (Infrastructure-as-a-Service), PaaS (Platform-as-a-Service), and SaaS (Software-as-a-Service).'
 
-Summary: [Insert 2-sentence simple summary of 'Cloud Computing']
+Summary: 'Cloud computing lets you rent computing services, like storage or processing power, over the internet instead of owning your own expensive hardware. This pay-as-you-go model helps companies save money and easily scale as needed.'
 
-Now, using the same simple and clear style, summarize this article on Blockchain:" [Article text inserted]
+Now, using the same simple and clear style, summarize this article on Blockchain:"
 
 Execution and Data Collection: Run each of the 4 prompts on all 4 platforms, for a total of 16 tests. For each test, record the following:
 
